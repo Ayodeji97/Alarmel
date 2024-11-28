@@ -1,6 +1,5 @@
 package com.danzucker.alarmel.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,15 +11,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = primary,
+    onPrimary = backgroundWhite,
+    secondary = secondary,
+    background = backgroundLightGrey,
+    onBackground = contentDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = primary,
+    onPrimary = backgroundWhite,
+    secondary = secondary,
+    background = backgroundLightGrey,
+    onBackground = contentDark
+
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -33,6 +37,9 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+/**
+ * We are implementing light and dark theme in this case
+ */
 @Composable
 fun AlarmelTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

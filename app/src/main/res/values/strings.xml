@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Alarmel</string>
+    <string name="app_logo">App logo</string>
+    <string name="empty_no_alarm">It\'s empty! Add the first alarm so you don\'t miss an important moment!</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="alarm_name">Alarm Name</string>
+    <string name="work_name">Work time…</string>
+    <string name="back">Back</string>
+    <string name="your_alarm">Your Alarms</string>
 </resources>
